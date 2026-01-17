@@ -1,0 +1,129 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #2b3445;
+  color: #fff;
+}
+
+
+.app {
+  display: grid;
+  grid-template-columns: 80px 1fr 260px;
+  height: 100vh;
+  gap: 15px;
+  padding: 15px;
+}
+
+ 
+.sidebar {
+  background: #1f2736;
+  border-radius: 15px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sidebar p {
+  margin: 25px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.content {
+  background: #1f2736;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.content input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+ 
+.current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current h2 {
+  font-size: 48px;
+}
+
+.icon {
+  font-size: 80px;
+}
+
+
+.hourly {
+  margin-top: 20px;
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.hours div {
+  background: #2b3445;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.conditions {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.conditions div {
+  background: #2b3445;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.weekly {
+  background: #1f2736;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.weekly .day {
+  margin: 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+ 
+@media (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .weekly {
+    display: none;
+  }
+} 
+
+.row{
+  display: flex;
+  background-size: cover;
+}

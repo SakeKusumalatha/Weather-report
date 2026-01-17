@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-dark text-white">
+    <h1 class="text-center">Weather App</h1>
+
+
+    <!-- form -->
+    <div class="row">
+        <div class="col-10">
+            <input type="text" class="form-control" placeholder="Enter City name" id="textBox">
+        </div>
+        <div class="col-2">
+            <button class="w-100 btn btn-outline-success" onclick="getData(event);">Search</button>
+        </div>
+    </div>
+
+
+    <!-- current Details -->
+    <div class="row" id="currentDetails">
+       <!-- html data from js -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+     <div class="current">
+      <div>
+        <h1 id="city">Madrid</h1>
+        <p>Chance of rain: <span id="rain">0%</span></p>
+        <h2><span id="temp">31</span>°C</h2>
+      </div>
+      <div class="icon" id="icon">☀️</div>
+    </div>
+
+    
+    <div class="hourly">
+      <h3>Today's Forecast</h3>
+      <div class="hours">
+        <div>6 AM<br>☁️<br>25°</div>
+        <div>9 AM<br>🌤<br>28°</div>
+        <div>12 PM<br>☀️<br>33°</div>
+        <div>3 PM<br>☀️<br>34°</div>
+        <div>6 PM<br>☀️<br>32°</div>
+        <div>9 PM<br>🌤<br>30°</div>
+      </div>
+    </div>
+
+    
+    <div class="conditions">
+      <div>Real Feel<br><strong id="feel">30°</strong></div>
+      <div>Wind<br><strong id="wind">0.2 km/h</strong></div>
+      <div>Rain<br><strong>0%</strong></div>
+      <div>UV Index<br><strong>3</strong></div>
+    </div>
+  </main>
+
+ 
+  <aside class="weekly">
+    <h3>7-Day Forecast</h3>
+    <div class="day">Today ☀️ 36° / 22°</div>
+    <div class="day">Tue ☀️ 37° / 21°</div>
+    <div class="day">Wed ☀️ 37° / 21°</div>
+    <div class="day">Thu ☁️ 37° / 21°</div>
+    <div class="day">Fri ☁️ 37° / 21°</div>
+    <div class="day">Sat 🌧 37° / 21°</div>
+    <div class="day">Sun ⚡ 37° / 21°</div>
+  </aside>
+</div>
+    
+    
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
